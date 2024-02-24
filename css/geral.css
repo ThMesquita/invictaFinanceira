@@ -19,6 +19,11 @@ body {
   background-color: #fafafa;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* img {
   max-width: 100%;
   object-fit: cover;

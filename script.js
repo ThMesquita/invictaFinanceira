@@ -1,3 +1,10 @@
+import Slide from "./js/slide.js";
+
+const slide = new Slide(".slide", ".slide-wrapper");
+slide.init();
+
+// -------------------------------------------
+
 const rangeInput = document.querySelector(".range-input input"),
   priceInput = document.querySelector(".price-input input"),
   progress = document.querySelector(".slider .progress"),
