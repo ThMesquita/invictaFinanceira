@@ -26,6 +26,10 @@
   text-decoration: none;
 }
 
+.emprestimos-introducao a:hover {
+  background: #b71111;
+}
+
 .emprestimos-introducao a img {
   width: 36px;
   margin-right: 20px;

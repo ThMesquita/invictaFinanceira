@@ -1,9 +1,9 @@
-import Slide from "./js/slide.js";
+import SlideNav from "./js/slide.js";
 
-const slide = new Slide(".slide", ".slide-wrapper");
+const slide = new SlideNav(".slide", ".slide-wrapper");
 slide.init();
-
-slide.changeSlide(3);
+slide.addArrow(".prev", ".next");
+slide.addControl(".custom-controls");
 
 // -------------------------------------------
 
