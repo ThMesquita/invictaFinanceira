@@ -3,6 +3,8 @@ import Slide from "./js/slide.js";
 const slide = new Slide(".slide", ".slide-wrapper");
 slide.init();
 
+slide.changeSlide(3);
+
 // -------------------------------------------
 
 const rangeInput = document.querySelector(".range-input input"),
