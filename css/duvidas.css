@@ -51,3 +51,43 @@
     display: none;
   }
 }
+
+@media (max-width: 400px) {
+  .duvidas-lista dt {
+    font-size: 0.75rem;
+  }
+  .duvidas-lista dd {
+    font-size: 0.75rem;
+  }
+}
+
+[data-tab="accordion"] dd {
+  display: none;
+}
+
+[data-tab="accordion"] dt::after {
+  content: "▼";
+  margin-left: 10px;
+  opacity: 0.8;
+}
+
+[data-tab="accordion"] dt.active::after {
+  content: "▲";
+}
+
+[data-tab="accordion"] dd.active {
+  display: block;
+  animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 250px;
+  }
+}

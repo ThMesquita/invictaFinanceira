@@ -10,10 +10,11 @@
 </head>
 
 <body>
-  <header class="header-bg">
+  <header class="header-bg" data-tab="menu">
     <div class="header container">
       <img src="./img/Logo.svg" alt="Logo">
-      <ul class="header-menu">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul class="header-menu" data-menu="list" id="menu">
         <li><a href="#emprestimos">Emprestimo</a></li>
         <li><a href="#duvidas">Dúvidas</a></li>
         <li><a href="#contato">Contato</a></li>
@@ -21,7 +22,7 @@
     </div>
 
   </header>
-  <section class="container emprestimos" id="emprestimos">
+  <section class="container emprestimos" data-anime="scroll" id="emprestimos">
     <div class="emprestimos-introducao">
       <h1 class="titulo-h1">Empréstimos Consignado</h1>
       <p>Contrate um empréstimo consignado com as mlhores taxas</p>
@@ -53,10 +54,10 @@
     </div>
   </section>
 
-  <section class="duvidas container" id="duvidas">
+  <section class="duvidas container" data-anime="scroll" id="duvidas">
     <h1 class="titulo-h1">Dúvidas</h1>
     <div class="duvidas-container">
-      <dl class="duvidas-lista">
+      <dl class="duvidas-lista" data-tab="accordion">
         <dt>Como funciona o consignado?</dt>
         <dd>O empréstimo consignado é uma modalidade em que o pagamento das parcelas é descontado diretamente do salário ou benefício previdenciário do solicitante. Isso reduz o risco para o credor, o que muitas vezes resulta em taxas de juros mais baixas em comparação com outras formas de empréstimo.</dd>
         <dt>Quais as vantagens e desvantagens?</dt>
@@ -70,29 +71,30 @@
     </div>
   </section>
 
-
-  <ul class="custom-controls">
-    <li><img src="img/slide/foto1-thumb.jpg" alt="thumb 1"></li>
-    <li><img src="img/slide/foto2-thumb.jpg" alt="thumb 2"></li>
-    <li><img src="img/slide/foto3-thumb.jpg" alt="thumb 3"></li>
-    <li><img src="img/slide/foto4-thumb.jpg" alt="thumb 4"></li>
-    <li><img src="img/slide/foto5-thumb.jpg" alt="thumb 5"></li>
-  </ul>
-  <div class="slide-wrapper">
-    <ul class="slide">
-      <li><img src="img/slide/foto1.jpg" alt="Foto 1"></li>
-      <li><img src="img/slide/foto2.jpg" alt="Foto 2"></li>
-      <li><img src="img/slide/foto3.jpg" alt="Foto 3"></li>
-      <li><img src="img/slide/foto4.jpg" alt="Foto 4"></li>
-      <li><img src="img/slide/foto5.jpg" alt="Foto 5"></li>
+  <section class="slide-nav" data-anime="scroll">
+    <ul class="custom-controls">
+      <li><img src="img/slide/foto1-thumb.jpg" alt="thumb 1"></li>
+      <li><img src="img/slide/foto2-thumb.jpg" alt="thumb 2"></li>
+      <li><img src="img/slide/foto3-thumb.jpg" alt="thumb 3"></li>
+      <li><img src="img/slide/foto4-thumb.jpg" alt="thumb 4"></li>
+      <li><img src="img/slide/foto5-thumb.jpg" alt="thumb 5"></li>
     </ul>
-  </div>
-  <div class="arrow-nav">
-    <button class="prev"></button>
-    <button class="next"></button>
-  </div>
+    <div class="slide-wrapper">
+      <ul class="slide">
+        <li><img src="img/slide/foto1.jpg" alt="Foto 1"></li>
+        <li><img src="img/slide/foto2.jpg" alt="Foto 2"></li>
+        <li><img src="img/slide/foto3.jpg" alt="Foto 3"></li>
+        <li><img src="img/slide/foto4.jpg" alt="Foto 4"></li>
+        <li><img src="img/slide/foto5.jpg" alt="Foto 5"></li>
+      </ul>
+    </div>
+    <div class="arrow-nav">
+      <button class="prev"></button>
+      <button class="next"></button>
+    </div>
+  </section>
 
-  <article class="contato container" id="contato">
+  <article class="contato container" data-anime="scroll" id="contato">
     <h1 class="titulo-h1">Contato</h1>
     <div class="contato-container">
       <a href="https://www.google.com/maps?sca_esv=2857d206596a3954&output=search&q=invicta+financeira&source=lnms&entry=mc" target="_blank"><img src="./img/mapa.jpg" alt="mapa"></a>
