@@ -31,6 +31,7 @@ priceInput.addEventListener("input", () => {
 
     priceElement.innerText = liberado.toLocaleString("pt-BR", formatoBR);
   }
+  verificarValor(priceInput);
 });
 
 rangeInput.addEventListener("input", () => {
